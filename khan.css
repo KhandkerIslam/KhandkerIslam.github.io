@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC');
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
+body{
+  margin: 0px;
+  padding:0px;
+}
+#hold{
+  padding-top: 50px;
+}
+.portfolio{
+  margin-top: -20px;
+  font-family:'Amatic SC',serif;
+  height:100vh;
+  width:100vw;
+  text-align: center;
+  background-color: white;
+}
+.navbar-inner{
+  background: transparent;
+}
+.work{
+  padding-top: 25px;
+  text-align: center;
+}
+#Resume{
+  padding-top: 100px;
+  font-family:'Pacifico',serif;
+  font-size: 64px;
+  text-align: center;
+  color: white;
+}
+.landing{
+  margin-top: -20px;
+  font-family:'Permanent Marker',serif;
+  background-color:white;
+  height:100vh;
+  width: 100vw;
+}
+.hero__title {
+  padding-top: 130px;
+  text-align: center;
+  position: relative;
+  letter-spacing: -0.5px;
+  line-height: 1.7;
+  font-size: 5vw;
+  font-weight: 300;
+
+  @include min($tablet) {
+    margin-top: 1.25em;
+    margin-bottom: 2.5em;
+    line-height: 68px;
+    font-size: $h1-font-size;
+  }
+}
