@@ -10,11 +10,14 @@ body{
 }
 .portfolio{
   margin-top: -20px;
-  font-family:'Amatic SC',serif;
+  font-family:'Permanent Marker',serif;
   height:100vh;
   width:100vw;
   text-align: center;
   background-color: white;
+}
+#nav{
+  font-family: Pacifico;
 }
 .navbar-inner{
   background: transparent;
@@ -22,6 +25,7 @@ body{
 .work{
   padding-top: 25px;
   text-align: center;
+  font-family: 'Permanent Marker',serif;
 }
 #Resume{
   padding-top: 100px;
