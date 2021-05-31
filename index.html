@@ -1,102 +1,71 @@
-<html>
-  <head>
-    <link rel="stylesheet" href="khan.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<!DOCTYPE html>
+<html lang="en">
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>DevJane Portfolio Website</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+        
+        <!-- Update these with your own fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="css/style.css">
 
-  </head>
-  <body>
-      <nav id="nav" class="navbar navbar-fixed-top">
-        <div class="navbar-inner">
-          <div class="container">
-            <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+    </head>
+    <body>
+        <header>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span>Resume</span>
             </button>
+            <nav class="nav">
+<!--                 <ul class="nav__list">
+                    <li class="nav__item"><a href="index.html" class="nav__link">Khandker Islam</a></li>
+                    <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="index.html#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                </ul> -->
+                <object type="application/pdf" data="resume.pdf" width="100%" height="100%">
+                </object>
+            </nav>
+        </header>
+        
 
-          </div>
-            <div class="collapse navbar-collapse">
-            <ul class="nav navbar-nav pull-right">
-              <li class="active"><a href="#landing" class="scroll">About</a></li>
-              <li id="portlink"><a href="#portfolio">Portfolio</a></li>
-              <li id="orglink"><a href="#organization">Organization</a></li>
+        <section class="intro">
+            <h1 class="section__title section__title--intro">
+                Khandker Islam <strong>FullStack Developer</strong>
+            </h1>
+            <p class="section__subtitle section__subtitle--intro">Personal Projects(Always adding more)</p>
+            <img src="img/JavaScript-logo.png" alt="" class="intro__img">
+        </section>
+        
+        <div class="portfolio-item-individual">
+            <h2 class="section__title section__title--work">Github Battle</h2>
+            <p>React project that displays the most popular repos on Github according to language</p>
+            <p>Battle with your friends (or enemies) to see who has the better stats on Github</p>
+            <a href="https://hardcore-turing-8d8e70.netlify.app/">
+                <img class="zoom" src="img/githubbattle.png" alt="github-battle" href="https://hardcore-turing-8d8e70.netlify.app/">
+            </a>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:khandker.islam46@gmail.com" class="footer__link">khandker.islam46@gmail.com</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com/khandkerislam">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a class="social-list__link" href="https://www.linkedin.com/in/khandkerislam/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
             </ul>
-          </div><!--/.nav-collapse -->
-        </div>
-        </div>
-      </nav>
-      <div id= "landing" class = "landing">
-        <h1 class="hero__title">
-          Hello, my name is Khandker Islam.<br> I am available for hire.
-          <br>
-          <br>
-          <i class="fa fa-arrow-down"></i>
-        </h1>
-        <div id="aboutMe" class ="container">
-          <div id="buttongroupone">
-            <button type="button" class="btn-lg" id="edu" class="btn ">Education</button>
-            <button type="button" class="btn-lg"id="course" class="btn ">Coursework</button>
-            <button type="button" class="btn-lg" id="exp"class="btn ">Experience</button>
-            <button type="button" class="btn-lg"id="contact"class="btn ">Contact</button>
-          </div>
-          <p id="text"></p>
-        </div>
-      </div>
-      <div id= "portfolio" class = "portfolio">
-        <h1 class="work">
-          Projects
-        </h1>
-        <div id="hold" class ="container">
-           <div class="row">
-               <div class="col-sm-4 col-centered ">
-                 <h1>WEATHER</h1>
-                 <div class="faded thumb">
-                   <a href="weather-app/index.html" target="_blank">
-                     <img src="images/weather.png" class="img-responsive" alt="">
-                   </a>
-
-                 </div>
-               </div>
-             <div class="col-sm-4 col-centered ">
-               <h1>WIKIPEDIA</h1>
-               <div id="wiki"class="faded thumb">
-                 <a href="wikipedia-viewer/index.html" target="_blank">
-                   <img src="images/wiki.png" class="img-responsive" alt="">
-                   <div class = "hover-opaque">
-                   </div>
-                 </a>
-               </div>
-             </div>
-             <div class="col-sm-4 col-centered ">
-               <h1>QUOTE GENERATOR</h1>
-               <div class="faded thumb">
-                 <a href="quote-generator-v2/index.html" target="_blank">
-                   <img src="images/quote.png" class="img-responsive" alt="">
-                 </a>
-               </div>
-             </div>
-           </div>
-        </div>
-      </div>
-      <div id= "organization" class = "organization">
-        <h1 class = "work">
-          Organizations
-        </h1>
-        <div class="row">
-            <div class="col-sm-4 col-centered ">
-              <h1>GMU MURAL FESTIVAL</h1>
-              <div class="faded thumb">
-                <a href="https://masonmuralfestival.herokuapp.com/index.html" target="_blank">
-                  <img src="images/logo.png" class="img-responsive" alt="">
-                </a>
-              </div>
-            </div>
-        </div>
-      </div>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-      <script src="index.js"></script>
-  </body>
+        </footer>
+        
+        
+        <script src="js/index.js"></script>
+        
+    </body>
 </html>
